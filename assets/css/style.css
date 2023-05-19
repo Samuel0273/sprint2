@@ -2,54 +2,86 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
 }
+
 body{
+    max-height: 100%;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
+    padding: 1rem 0;
 }
+
 table{
-    background-color: white;
-    margin-left: 20rem;
-    margin-top: 1rem;
-    height: 20rem;
-    width: 40rem;
+    flex-wrap: wrap;
+    background-color: blue;
+    border: 1px solid white;
+    margin: 1rem;
+    height: 75vh;
+    width: 60vh;
+    max-width: 90%;
+    border-radius: 0.5rem;
 }
+
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 98%;
+}
+
 tr{
+    flex-wrap: wrap;
     color: white;
     background-color: black;
 }
-ol{
-    color: white;
-    margin-left: 45rem;
-    margin-top: -10rem;
-    margin-bottom: 5rem;
+
+th{
+    flex-wrap: wrap;
+    padding: 1rem;
 }
+
+li{
+    flex-wrap: wrap;
+    white-space: pre-line;
+}
+
+ol{
+    flex-wrap: wrap;
+    color: white;
+}
+
 ul{
+    flex-wrap: wrap;
     margin-left: 1rem;
-    margin-top: 6px;
+}
+
+.list2{
+    margin-left: 1rem;
+}
+.ocult{
+    list-style: none;
 }
 h1{
-    color: purple;
+    color: cyan;
     text-align: center;
-    animation: zoomIn;
+    margin: 1rem 0;
 }
 
 h2{
     color: white;
     text-align: center;
-    animation: zoomIn;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 8px 0;
 }
+
 p.information{
     margin-top: 5rem;
 }
 p{
+    flex-wrap: wrap;
     color: white;
-    animation: zoomIn;
     text-align: center;
 }
 .animate__animated.animate__zoomIn{
@@ -58,99 +90,352 @@ p{
 
 a{
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
 }
 
 img{
     height: 12rem;
+    max-width: 90%;
 }
 
 #Logo{
-    height: 2rem;
-    right: 3rem;
-    top: 16.5px;
-    background-color: white;
-    position: fixed;
+    margin: 4px;
+    justify-content: flex-end;
+    align-items: end;
+    height: 3rem;
 }
 
-div.cajon1{
-    height: 2rem;
+.nav1{
+    margin: 8px 0;
+    flex-direction: row;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.nav1:hover{
+    color: black;
+    background-color: cyan;
+}
+
+.cajon1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    object-fit: cover;
+    background-color: blue;
+}
+
+.cajon2{
+    align-items: end;
+    padding: 4px;
+    background-color: blue;
+}
+
+.img1{
+    object-fit: cover;
+    background-color: blue;
+    border: 1px solid white;
+    width: 80vh;
+    height: 30vh;
     margin: 1rem;
-    padding-top: 4px;
-    background-color: purple;
-    border: 1px solid white;
+    padding: 0.2rem;
+    max-width: 90%;
+    border-radius: 1rem;
 }
 
-img.img1{
-    margin-left: 20rem;
-    margin-top: 1rem;
-    background-color: purple;
-    border: 1px solid white;
-    width: 35rem;
-    height: 15rem;
-    padding: 0.2rem
+.imgbox1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgbox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.imbox3{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.bigbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgbox4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imbox5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgbox6{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
 }
 
 #img2{
-    margin-left: 50rem;
-    margin-top: 1rem;
-    background-color: purple;
+    align-items: end;
+    background-color: blue;
     border: 1px solid white;
-    width: 15rem;
-    height: 12rem;
-    padding: 0.2rem
-    
+    width: 12rem;
+    height: 16rem;
+    margin: 1rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
 }
 
-img.img3{
-    margin-left: 20rem;
-    margin-top: 1rem;
-    background-color: purple;
+.img3{
+    margin: 1rem;
+    background-color: blue;
     border: 1px solid white;
-    padding: 0.2rem
-    
+    padding: 0.2rem;
+    height: 30vh;
+    width: 60vh;
+    border-radius: 1rem;
 }
 
-img.img6{
-    margin-left: 31rem;
-    margin-top: 1rem;
-    background-color: purple;
+.img4{
+    margin: 1rem;
+    background-color: blue;
     border: 1px solid white;
-    width: 15rem;
-    height: 12rem;
-    padding: 0.2rem
+    padding: 0.2rem;
+    height: 30vh;
+    width: 65vh;
+    border-radius: 1rem;
+}
+
+.img6{
+    object-fit: cover;
+    margin: 1rem;
+    background-color: blue;
+    border: 1px solid white;
+    width: 36vh;
+    height: 42vh;
+    max-width: 90%;
+    padding: 0.2rem;
+    border-radius: 1rem;
 }
 
 #text1{
-    position: absolute;
-    margin-top: 5rem;
-    margin-left: 15rem;
+    flex-direction: column;
     text-align: left;
-    white-space: pre-line
+    white-space: pre-line;
+    margin: 1rem;
 }
-
+#name{
+    margin: 0.5rem;
+}
 p.textleft{
-    position: absolute;
-    margin-top: -7rem;
-    margin-left: 40rem;
+    margin: 1rem;
     white-space: pre-line;
     flex-direction: column;
 }
 
-#name{
-    text-align: center;
-
+.Pi{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
 }
 
-p.p2{
+.p2{
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
 
-a.p3{
-    padding: 1rem;
-    margin-left: 26rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.p3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1rem;
+}
+.p3 :hover{
+    color: cyan;
+}
+/* pagina final */
+#textf{
+    white-space: pre-line;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.map1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mapfinal{
+    object-fit: cover;
+    margin: 1rem;
+    background-color: blue;
+    border: 1px solid white;
+    width: 70vh;
+    height: 50vh;
+    padding: 0.2rem;
+    border-radius: 1rem;
+}
+.final{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form{
+    margin: 1rem;
+    background-color: blue;
+    border: 1px solid white;
+    height: 38rem;
+    width: 28rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+}
+.formterm{
+    margin: 0 1rem;
+}
+.formline{
+    display: flex;
+    margin: 0.5rem;
+    flex-direction: column;
+}
+fieldset{
+    background-color: black;
+    border: 1px solid white;
+    height: 37.5rem;
+    width: 27.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+label{
+    color: cyan;
+}
+input{
+    flex-wrap: wrap;
+    background-color: cyan;
+    border: 2px solid cyan;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+select{
+    color: white;
+    background-color: black;
+    border: 2px solid cyan;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+.pform{
+    text-align: start;
+}
+::placeholder{
+    color: black;
+}
+/* disposicion para tablet */
+@media only screen and (max-width:1024px) and (min-width:768px){
+    body{
+        padding: 0;
+    }
+    .cajon1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav1{
+        width: 15rem;
+        height: 3rem;
+        text-align: center;
+    }
+    .mapfinal{
+        width: 70vh;
+        height: 30vh;
+    }
+    .p2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .p3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imgbox4{
+        flex-direction: column;
+    }
+    .imgbox6{
+        flex-direction: column;
+    }
+    .final{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .table{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* disposicion para movil */
+@media only screen and (max-width:768px) and (min-width:320px){
+    body{
+        padding: 0;
+    }
+    .cajon1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav1{
+    width: 15rem;
+    height: 3rem;
+    text-align: center;
+    }
+    .mapfinal{
+        width: 70vh;
+        height: 30vh;
+    }
+    .p2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .p3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imgbox4{
+        flex-direction: column;
+    }
+    .imgbox6{
+        flex-direction: column;
+    }
+    .final{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .table{
+        flex-direction: column;
+        align-items: center;
+    }
 }
